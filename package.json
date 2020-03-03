@@ -1,0 +1,13 @@
+{
+  "name": "@lunit/cornerstone-declarations",
+  "version": "0.2.0",
+  "typings": "index.d.ts",
+  "author": "Seoyeon Lee <i@ssen.name>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
+}
