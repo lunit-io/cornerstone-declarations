@@ -1,6 +1,6 @@
 {
   "name": "@lunit/cornerstone-declarations",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "typings": "index.d.ts",
   "author": "Seoyeon Lee <i@ssen.name>",
   "license": "MIT",

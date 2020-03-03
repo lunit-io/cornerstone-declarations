@@ -13,5 +13,8 @@ declare const cornerstoneWADOImageLoader: {
     dataSetCacheManager: {
       unload: (imageId: string) => void;
     };
+    fileManager: {
+      add: (file: File) => string;
+    };
   };
 };
