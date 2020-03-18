@@ -233,7 +233,7 @@ declare module cornerstone {
     windowWidth: number;
 
     /** a function that returns the underlying pixel data. An array of integers for grayscale and an array of RGBA for color */
-    getPixelData: () => Uint8Array;
+    getPixelData: () => Uint8Array | Uint16Array | Int8Array | Int16Array;
 
     /** a function that returns a canvas imageData object for the image. This is only needed for color images */
     getImageData: () => ImageData;
@@ -873,7 +873,7 @@ declare module cornerstone {
    *
    * @param image The cornerstone image object
    */
-  export function getImageDataType(image: Image): 'rgb' | 'iint16' | 'uint16' | 'int8' | 'uint8';
+  export function getImageDataType(image: Image): 'rgb' | 'int16' | 'uint16' | 'int8' | 'uint8';
 
   /**
    * Convert stored pixel data to image data.
@@ -881,7 +881,7 @@ declare module cornerstone {
    * @param image A Cornerstone Image Object
    * @returns The image data for use by the WebGL shader
    */
-  export function storedPixelDataToImageData(image: Image): Uint8Array;
+  export function storedPixelDataToImageData(image: Image): Uint8Array | Uint16Array | Int8Array | Int16Array;
 
   /**
    * Creates and compiles a shader.
