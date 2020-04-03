@@ -1,6 +1,6 @@
 {
   "name": "@lunit/cornerstone-declarations",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "typings": "index.d.ts",
   "author": "Seoyeon Lee <i@ssen.name>",
   "license": "MIT",
@@ -8,6 +8,8 @@
     "access": "public"
   },
   "devDependencies": {
+    "@lunit/prettier-config": "^0.1.1",
+    "prettier": "^2.0.2",
     "typescript": "^3.8.3"
   }
 }
